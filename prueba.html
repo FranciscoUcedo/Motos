@@ -1,0 +1,78 @@
+<!-- ESTO LO SAQUE PORQUE LO HICE CON JS-->
+<div class="card">
+        <!--CADA FOTO VA EN UNA CARD(SIN JS HAY QUE REPETIR ESTE PROCESO POR CADA FOTO) -->
+        <a href="#" data-toggle="modal" data-target="#exampleModal" >
+            <img src="C:\Users\Franc\Desktop\Deve\Proyectos prog\Motos\imgReunion/moto1.jpg" class="card-img-top" 
+            alt="Reunion de motoqueros" width="100%">
+        </a>
+        <div class="card-body">
+            <h5 class="card-title">Ruenion en plaza de Mayo</h5>
+            <p class="card-text">Primera reunion organizada por esta pagina</p>
+            <p class="card-text"><small class="text-muted">Subido el 11/7/19</small></p>
+        </div>
+
+
+        <a href="#">
+            <img src="C:\Users\Franc\Desktop\Deve\Proyectos prog\Motos\imgReunion/moto5.jpeg" class="card-img-top" 
+            alt="Reunion de motoqueros" width="100%">
+            </a>
+        <div class="card-body">
+            <h5 class="card-title">Reunion</h5>
+            <p class="card-text">Con la bandera de 2 de los grupos</p>
+            <p class="card-text"><small class="text-muted">Subido el 11/7/19</small></p>
+        </div>
+    </div>
+
+    <!-- CADA MODAL CON SU FOTO (SIN JS HAY QUE HACER ESTO POR CADA FOTO) -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="close mr-2 mt-3" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <img src="C:\Users\Franc\Desktop\Deve\Proyectos prog\Motos\imgReunion/moto1.jpg" class="img-fluid rounded ">
+
+            </div>
+        </div>
+
+
+        <!--JS PARA MODAL -->
+        <script>
+
+                var imagenes = [1,2,3,4];
+                var galeria = document.getElementaryById ('galeria');
+
+                for (imagen of imagenes){
+                    galeria.innerHTML += `
+            <div class="card">
+            <!--CADA FOTO VA EN UNA CARD(SIN JS HAY QUE REPETIR ESTE PROCESO POR CADA FOTO) -->
+
+
+            <a href="#" data-toggle="modal" data-target="#id${imagen}" >
+                <img src="imgReunion\${imagen}.jpg" class="card-img-top r" 
+                alt="Reunion de motoqueros" width="100%">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Ruenion en plaza de Mayo</h5>
+                <p class="card-text">Primera reunion organizada por esta pagina</p>
+                <p class="card-text"><small class="text-muted">Subido el 11/7/19</small></p>
+            </div>
+
+
+
+        <!-- CADA MODAL CON SU FOTO (SIN JS HAY QUE HACER ESTO POR CADA FOTO) -->
+            <div class="modal fade" id="${imagen}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <button type="button" class="close mr-2 mt-3" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <img src="imgReunion\${imagen}.jpg" class="img-fluid rounded ">
+
+                </div>
+            </div> 
+                    `
+                }
+            
+            
+            </script>
+
+            <!--FIN JS PARA MODAL-->

@@ -49,39 +49,71 @@
 
 <!--INICIO GALERIA DE FOTOS-->
 
-    <p class="text-center display-4 my-4" >
+    <p class="text-center h1 my-4" >
         Nuestra galeria de fotos
     </p>
 
 
    <div class="container" >
+       <div class="row">
         <div class="card-columns" id="galeria">
-                <div class="card">
-            <!--CADA FOTO VA EN UNA CARD-->
-            <a href="#" data-toggle="modal" data-target="#exampleModal" >
-                <img src="imgReunion/moto1.jpg" class="card-img-top" 
-                alt="Reunion de motoqueros" width="100%">
-            </a>
-            <div class="card-body">
-                <h5 class="card-title">Ruenion en plaza de Mayo</h5>
-                <p class="card-text">Primera reunion organizada por esta pagina</p>
-                <p class="card-text"><small class="text-muted">Subido el 11/7/19</small></p>
+            <div class="card">
+                <!--CADA FOTO VA EN UNA CARD-->
+
+                <!--foto 1-->
+                <a href="#" data-toggle="modal" data-target="#exampleModal" >
+                    <img src="imgReunion/moto1.jpg" class="card-img-top  " 
+                    alt="Reunion de motoqueros" >
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Ruenion en plaza de Mayo</h5>
+                    <p class="card-text">Primera reunion organizada por esta pagina</p>
+                    <p class="card-text"><small class="text-muted">Subido el 11/7/19</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <!--Foto 2-->
+                <a href="#" data-toggle="modal" data-target="#exampleModal2" >
+                    <img src="imgReunion/moto5.jpeg" class="card-img-top " 
+                    alt="Reunion de motoqueros" >
+                    </a>
+                <div class="card-body">
+                    <h5 class="card-title">Reunion</h5>
+                    <p class="card-text">Con la bandera de 2 de los grupos</p>
+                    <p class="card-text"><small class="text-muted">Subido el 11/7/19</small></p>
+                </div>
             </div>
 
+            <div class="card">
+                <!--Foto 3-->
+                <a href="#" data-toggle="modal" data-target="#exampleModal3" >
+                     <img src="imgReunion/moto3.jpg" class="card-img-top" 
+                     alt="Reunion de motoqueros" >
+                     </a>
+                <div class="card-body">
+                    <h5 class="card-title">Moto de un nene</h5>
+                    <p class="card-text">Moto del hijo de Juan</p>
+                    <p class="card-text"><small class="text-muted">Subido el 12/7/19</small></p>
+                </div>
+            </div>
 
-            <a href="#">
-                <img src="imgReunion/moto5.jpeg" class="card-img-top" 
-                alt="Reunion de motoqueros" width="100%">
-                </a>
-            <div class="card-body">
-                <h5 class="card-title">Reunion</h5>
-                <p class="card-text">Con la bandera de 2 de los grupos</p>
-                <p class="card-text"><small class="text-muted">Subido el 11/7/19</small></p>
+            <div class="card">
+                <!--Foto 4-->
+                <a href="#" data-toggle="modal" data-target="#exampleModal4" >
+                        <img src="imgReunion/moto4.jpg" class="card-img-top" 
+                        alt="Reunion de motoqueros" >
+                        </a>
+                   <div class="card-body">
+                       <h5 class="card-title">Yendo a la reunion</h5>
+                       <p class="card-text">Por la avenida 25 de Mayo</p>
+                       <p class="card-text"><small class="text-muted">Subido el 12/7/19</small></p>
+                   </div>
             </div>
         </div>
 
         
             <!-- CADA MODAL CON SU FOTO (SIN JS HAY QUE HACER ESTO POR CADA FOTO) -->
+            <!--Modal 1-->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <button type="button" class="close mr-2 mt-3" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -91,11 +123,40 @@
 
                 </div>
             </div>
+            <!--Modal 2-->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                    <button type="button" class="close mr-2 mt-3" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <img src="imgReunion/moto5.jpeg" class="img-fluid rounded ">
 
+                </div>
+            </div>
+            <!--Modal 3-->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                    <button type="button" class="close mr-2 mt-3" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <img src="imgReunion/moto3.jpg" class="img-fluid rounded ">
+
+                </div>
+            </div>
+
+            <!--Modal 4-->
+            <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                    <button type="button" class="close mr-2 mt-3" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <img src="imgReunion/moto4.jpg" class="img-fluid rounded ">
+
+                </div>
+            </div>
         </div>  
+        </div>
     </div>
-
-
 
 <!--FIN GALERIA DE FOTOS-->
 
