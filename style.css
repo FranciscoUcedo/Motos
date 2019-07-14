@@ -6,3 +6,25 @@ p{
 
 }
 
+.galeria{
+
+    height: 245px;
+}
+
+.galeriaTextoo{
+
+    color:white;
+    background-color: blue ;
+
+
+}
+
+
+.fondocontacto{
+
+    background-image: url("img/fondo3.png");
+    background-size: cover;
+    background-image:no-repeat;
+    background-position: center;
+    height: 900px;
+}
